@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="top">
+      <h1>GUESSING GAME</h1>
+      <button class="btn retry" id="retry">Retry</button>
+    </div>
+    <div class="guessing">
+      <div class="hint">
+        <p class="hint1">Between 1 - 20</p>
+      </div>
+      <div class="guess"><p class="num-guess">?</p></div>
+    </div>
+    <div class="footer">
+      <div class="scores">
+        <p>Tries: <span class="tries">10</span></p>
+        <p>High Score: <span class="hs"></span></p>
+      </div>
+      <div class="pNum">
+        <form>
+          <label for="number"></label>
+          <input
+            class="player-num"
+            type="number"
+            name="number"
+            id="playerNum"
+            min="0"
+            max="20"
+          />
+          <button class="btn" id="btn">Check</button>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
